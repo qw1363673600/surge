@@ -5,8 +5,8 @@
 
 
 [URL Rewrite]
-^https?:\/\/upos-hz-mirrorakam\.akamaized\.net https://upos-sz-estgoss.bilivideo.com header
-^https?:\/\/upos-sz-mirrorcosov\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+“^https?:\/\/upos-hz-mirrorakam\.akamaized\.net” https://upos-sz-estgoss.bilivideo.com header
+“^https?:\/\/upos-sz-mirrorcosov\.bilivideo\.com“ https://upos-sz-estgoss.bilivideo.com header
 
 [MITM]
-hostname = upos-hz-mirrorakam.akamaized.net, upos-sz-mirrorcosov.bilivideo.com
+hostname = %APPEND% upos-hz-mirrorakam.akamaized.net, upos-sz-mirrorcosov.bilivideo.com
