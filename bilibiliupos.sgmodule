@@ -1,7 +1,6 @@
 #!name=bilibiliupos
 #!desc=bilibiliupos重定向
-
-
+#!重定向bilibili海外upos服务器到阿里云upos服务器
 
 
 [URL Rewrite]
