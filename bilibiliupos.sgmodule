@@ -4,8 +4,11 @@
 
 
 [URL Rewrite]
+#akamai
 ^https?:\/\/upos-hz-mirrorakam\.akamaized\.net https://upos-sz-estgoss.bilivideo.com header
+#腾讯云海外
 ^https?:\/\/upos-sz-mirrorcosov\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+#unknown
 ^https?:\/\/cn-hk-eq-bcache-01\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
 ^https?:\/\/cn-hk-eq-bcache-02\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
 ^https?:\/\/cn-hk-eq-bcache-03\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
@@ -25,6 +28,22 @@
 ^https?:\/\/cn-hk-eq-bcache-17\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
 ^https?:\/\/cn-hk-eq-bcache-18\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
 ^https?:\/\/cn-hk-eq-bcache-19\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-bcache-20\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+#香港Equinix IX
+^https?:\/\/cn-hk-eq-01-01\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-02\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-03\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-04\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-05\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-06\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-07\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-08\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-09\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-10\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-11\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-12\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-13\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
+^https?:\/\/cn-hk-eq-01-14\.bilivideo\.com https://upos-sz-estgoss.bilivideo.com header
 
 [MITM]
-hostname = %APPEND% upos-hz-mirrorakam.akamaized.net, upos-sz-mirrorcosov.bilivideo.com, cn-hk-eq-bcache-??.bilivideo.com
+hostname = %APPEND% upos-hz-mirrorakam.akamaized.net, upos-sz-mirrorcosov.bilivideo.com, cn-hk-eq-bcache-??.bilivideo.com, cn-hk-eq-01-??.bilivideo.com
